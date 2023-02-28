@@ -24,15 +24,15 @@
     @apply w-auto;
   }
   .sidebar .nav-item > a {
-    @apply mb-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-[#506690] hover:bg-black/10  hover:text-black;
+    @apply  mb-1 px-2 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-[#506690] hover:bg-black/10  hover:text-black;
   }
   .sidebar .nav-item > a.active {
     @apply bg-black/10 text-black;
   }
   .sidebar ul.sub-menu li a {
-    @apply flex items-center px-9 py-2.5 before:h-0.5 before:w-2 before:rounded before:bg-gray-300 hover:bg-gray-100 hover:text-black hover:before:!bg-black before:mr-2;
+    @apply flex items-center relative pl-[3.3rem] px-9 py-1 hover:bg-black/5 rounded-lg hover:text-black hover:before:h-4 hover:before:w-1 hover:before:bg-black hover:before:absolute hover:before:top-[6px] hover:before:left-0 hover:before:rounded-[3px];
   }
   .sidebar ul.sub-menu li a.active {
-    @apply text-black before:bg-black;
+    @apply text-black;
   }
 }
