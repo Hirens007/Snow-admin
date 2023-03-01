@@ -12,11 +12,14 @@ module.exports = {
         black: {
           DEFAULT: "#1c1c1c",
         },
-        lightblue:{
-          DEFAULT :"#E3F5FF",
+        lightwhite: {
+          DEFAULT: "#F7F9FB",
         },
-        lightpurple:{
-          DEFAULT :"#E5ECF6",
+        lightblue: {
+          DEFAULT: "#E3F5FF",
+        },
+        lightpurple: {
+          DEFAULT: "#E5ECF6",
         },
       },
     },
@@ -26,4 +29,4 @@ module.exports = {
       strategy: "base", // only generate global styles
     }),
   ],
-}
+};
