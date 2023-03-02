@@ -12,7 +12,7 @@
   </head>
   <body class="antialiased relative font-inter bg-white text-black text-sm font-normal overflow-x-hidden">
     <div class="main-container navbar-sticky flex">
-      <nav class="sidebar flex-none h-full w-[212px] border-r border-black/10 transition-all duration-300 -ml-[212px] lg:ml-0">
+      <nav class="sidebar flex-none w-[212px] border-r border-black/10 transition-all duration-300 -ml-[212px] lg:ml-0">
         <div class="bg-white h-full">
           <div class="flex justify-between items-center p-4">
             <a href="/" class="main-logo flex items-center shrink-0">
@@ -25,7 +25,7 @@
               </svg>
             </a>
           </div>
-          <ul class="relative h-[calc(100vh-75px)] overflow-y-auto overflow-x-hidden p-4 py-0" x-data="{ activeDropdown: null }">
+          <ul class="relative h-[calc(100vh-58px)] overflow-y-auto overflow-x-hidden p-4 py-0" x-data="{ activeDropdown: null }">
             <h2 class="pl-3 mb-2 text-black/40 text-sm">
               <span>Dashboards</span>
             </h2>
@@ -316,7 +316,7 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M14.008 19.4259C14.008 19.4259 14.0041 19.4234 13.9996 19.4234C13.9996 19.4234 13.995 19.4234 13.9912 19.4259L10.3261 21.7468C10.3261 21.7468 9.93626 21.9949 9.48606 21.9635C9.48606 21.9635 9.07178 21.9345 8.73462 21.6782C8.73462 21.6782 8.40168 21.4252 8.2568 21.0357C8.2568 21.0357 8.10101 20.6169 8.21434 20.1734L9.26877 16.0182C9.26877 16.0182 9.27176 16.0061 9.26682 15.9911C9.26682 15.9911 9.26188 15.9761 9.24973 15.9661L5.71643 13.019C5.71643 13.019 5.39679 12.7536 5.29192 12.3555C5.29192 12.3555 5.19608 11.9918 5.30876 11.6277C5.30876 11.6277 5.4227 11.2596 5.7111 11.0158C5.7111 11.0158 6.02856 10.7475 6.45125 10.7201L11.061 10.4232C11.061 10.4232 11.0718 10.4225 11.0774 10.4184C11.0774 10.4184 11.083 10.4142 11.0854 10.4077L11.0906 10.3943L12.8065 6.07343C12.8065 6.07343 12.9444 5.70285 13.269 5.47549C13.269 5.47549 13.598 5.24512 13.9996 5.24512C13.9996 5.24512 14.4011 5.24512 14.7301 5.47549C14.7301 5.47549 15.0547 5.70285 15.1927 6.07343L16.9086 10.3943L16.9137 10.4077C16.9137 10.4077 16.9161 10.4142 16.9217 10.4184C16.9217 10.4184 16.9273 10.4225 16.9343 10.4229L21.5475 10.7201C21.5475 10.7201 21.9706 10.7475 22.288 11.0158C22.288 11.0158 22.5764 11.2596 22.6904 11.6277C22.6904 11.6277 22.8031 11.9918 22.7072 12.3555C22.7072 12.3555 22.6023 12.7536 22.2817 13.0199L18.7515 15.9644C18.7515 15.9644 18.7372 15.9761 18.7323 15.9911C18.7323 15.9911 18.7274 16.0061 18.7312 16.0214L19.8709 20.5022C19.8709 20.5022 19.9727 20.904 19.8308 21.2834C19.8308 21.2834 19.6988 21.6365 19.3964 21.8655C19.3964 21.8655 19.0899 22.0976 18.7126 22.1235C18.7126 22.1235 18.3035 22.1517 17.9474 21.9271L14.0088 19.4264L14.0083 19.4261L14.008 19.4259ZM18.6143 20.8698L14.6788 18.3711L14.6783 18.3708C14.6783 18.3708 14.3677 18.1734 13.9996 18.1734C13.9996 18.1734 13.6313 18.1734 13.3205 18.3711L9.65737 20.6907C9.65737 20.6907 9.57231 20.7449 9.49107 20.6831C9.49107 20.6831 9.39325 20.6088 9.42542 20.4829L10.4804 16.3256C10.4804 16.3256 10.5718 15.9572 10.454 15.5999C10.454 15.5999 10.3363 15.2425 10.0463 15.0027L6.51708 12.0591C6.51708 12.0591 6.49056 12.0371 6.50287 11.9973C6.50287 11.9973 6.5117 11.9688 6.53225 11.9675L11.1413 11.6706C11.1413 11.6706 11.516 11.6488 11.8208 11.4233C11.8208 11.4233 12.1223 11.2003 12.2546 10.8501L13.9711 6.52757L13.9775 6.51054C13.9775 6.51054 13.9801 6.5036 13.9861 6.49936C13.9861 6.49936 13.9922 6.49512 13.9996 6.49512C13.9996 6.49512 14.007 6.49512 14.013 6.49936C14.013 6.49936 14.0191 6.5036 14.0216 6.51054L14.0281 6.52757L15.7446 10.8501C15.7446 10.8501 15.8768 11.2003 16.1784 11.4233C16.1784 11.4233 16.4832 11.6488 16.8617 11.6708L21.4672 11.9675C21.4672 11.9675 21.4874 11.9688 21.4963 11.9973C21.4963 11.9973 21.5086 12.0371 21.4831 12.0583L17.9508 15.0044C17.9508 15.0044 17.6629 15.2425 17.5451 15.5999C17.5451 15.5999 17.4273 15.9572 17.518 16.3224L18.6595 20.8103C18.6595 20.8103 18.6691 20.8483 18.6418 20.869C18.6418 20.869 18.6286 20.8789 18.6143 20.8698Z" fill="#1C1C1C" />
               </svg>
             </button>
-            <div>
+            <div class="hidden sm:block">
               <nav aria-label="breadcrumb" class="w-full py-1 px-2">
                 <ol class="flex space-x-3">
                   <li class="flex items-center">
@@ -331,7 +331,7 @@
             </div>
           </div>
           <div class="flex items-center gap-5">
-            <form class="flex items-center">
+            <form class="md:flex items-center hidden">
               <label for="voice-search" class="sr-only">Search</label>
               <div class="relative w-full">
                 <div class="absolute inset-y-0 left-0 flex items-center pl-[6px] pointer-events-none">
@@ -389,133 +389,164 @@
             </div>
           </div>
         </div>
-        <div class="p-7">
-          <div class="relative mb-4">
-            <select class="form-select h-7 border-0 bg-transparent px-2 py-1 pr-[1.875rem] text-sm font-semibold text-black focus:shadow-none focus-visible:ring-0">
-              <option value="html">Today</option>
-              <option value="react">Week</option>
-              <option value="vue">Month</option>
-            </select>
-          </div>
-          <div class="flex flex-col gap-7">
-            <div class="grid grid-cols-4 gap-7">
-              <div class="bg-lightblue rounded-2xl p-6">
-                <p class="text-sm font-semibold text-black mb-2">Views</p>
-                <div class="flex items-center justify-between">
-                  <h2 class="text-2xl leading-9 font-semibold text-black">721K</h2>
-                  <div class="flex items-center gap-1">
-                    <p class="text-xs leading-[18px] text-black">+11.01%</p>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
-                    </svg>
+        <div class="h-[calc(100vh-73px)] overflow-y-auto overflow-x-hidden">
+            <div class="p-7">
+                <div class="relative mb-4">
+                  <select class="form-select h-7 border-0 bg-transparent px-2 py-1 pr-[1.875rem] text-sm font-semibold text-black focus:shadow-none focus-visible:ring-0">
+                    <option value="html">Today</option>
+                    <option value="react">Week</option>
+                    <option value="vue">Month</option>
+                  </select>
+                </div>
+                <div class="flex flex-col gap-7">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-7">
+                    <div class="bg-lightblue rounded-2xl p-6">
+                      <p class="text-sm font-semibold text-black mb-2">Views</p>
+                      <div class="flex items-center justify-between">
+                        <h2 class="text-2xl leading-9 font-semibold text-black">721K</h2>
+                        <div class="flex items-center gap-1">
+                          <p class="text-xs leading-[18px] text-black">+11.01%</p>
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-lightpurple rounded-2xl p-6">
+                      <p class="text-sm font-semibold text-black mb-2">Visits</p>
+                      <div class="flex items-center justify-between">
+                        <h2 class="text-2xl leading-9 font-semibold text-black">367K</h2>
+                        <div class="flex items-center gap-1">
+                          <p class="text-xs leading-[18px] text-black">+9.15%</p>
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-lightblue rounded-2xl p-6">
+                      <p class="text-sm font-semibold text-black mb-2">New Users</p>
+                      <div class="flex items-center justify-between">
+                        <h2 class="text-2xl leading-9 font-semibold text-black">1,156</h2>
+                        <div class="flex items-center gap-1">
+                          <p class="text-xs leading-[18px] text-black">-0.56%</p>
+                          <svg width="16" height="16" class="rotate-180" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="bg-lightpurple rounded-2xl p-6">
+                      <p class="text-sm font-semibold text-black mb-2">Active Users</p>
+                      <div class="flex items-center justify-between">
+                        <h2 class="text-2xl leading-9 font-semibold text-black">239K</h2>
+                        <div class="flex items-center gap-1">
+                          <p class="text-xs leading-[18px] text-black">-1.48%</p>
+                          <svg width="16" height="16" class="rotate-180" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-4 gap-7">
+                    <div class="md:col-span-3 bg-lightwhite p-6 rounded-2xl">
+                      <div class="flex justify-between gap-3 items-center mb-4">
+                        <div class="flex flex-col md:flex-row items-center gap-4">
+                          <ul id="tabs" class="inline-flex gap-1 text-sm font-normal">
+                              <li class="px-1.5 py-1 text-black font-semibold"><a href="javascritp:;">Total Users</a></li>
+                              <li class="px-1.5 py-1 text-black/40 hover:text-black"><a href="javascritp:;">Total Projects</a></li>
+                              <li class="px-1.5 py-1 text-black/40 hover:text-black"><a href="javascritp:;">Operating Status</a></li>
+                            </ul>
+                          <p class="hidden md:block">|</p>
+                          <div class="flex gap-4 items-center flex-none">
+                              <div class="flex items-center">
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M11 8C11 9.65685 9.65685 11 8 11C6.34315 11 5 9.65685 5 8C5 6.34315 6.34315 5 8 5C9.65685 5 11 6.34315 11 8Z" fill="#1C1C1C"/>
+                                  </svg>
+                                  <p class="text-xs">Current Week</p>   
+                              </div>
+                              <div class="flex items-center">
+                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M11 8C11 9.65685 9.65685 11 8 11C6.34315 11 5 9.65685 5 8C5 6.34315 6.34315 5 8 5C9.65685 5 11 6.34315 11 8Z" fill="#A8C5DA"/>
+                                  </svg>
+                                  <p  class="text-xs">Previous Week</p>   
+                              </div>
+                          </div>
+                        </div>
+                        <div x-data="dropdown" @click.outside="open = false" class="dropdown ml-auto">
+                          <a href="javascript:;" @click="toggle">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="#1C1C1C" />
+                              <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="#1C1C1C" />
+                              <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="#1C1C1C" />
+                            </svg>
+                          </a>
+                          <ul x-cloak x-show="open" x-transition x-transition.duration.300ms class="right-0 hidden">
+                            <li><a href="javascript:;" @click="toggle">Weekly</a></li>
+                            <li><a href="javascript:;" @click="toggle">Monthly</a></li>
+                            <li><a href="javascript:;" @click="toggle">Yearly</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div id="linechart"></div>
+                    </div>
+                    <div class="bg-lightwhite p-6 rounded-2xl">
+                      <h2 class="text-sm font-semibold text-black mb-4">Traffic by Website</h2>
+                      <div class="flex flex-col gap-[18px]">
+                        <div class="flex gap-4 items-center group">
+                          <p class="w-16 flex-none">Google</p>
+                          <div class="w-full h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
+                        </div>
+                        <div class="flex gap-4 items-center group">
+                          <p class="w-16 flex-none">Yourtube</p>
+                          <div class="w-1/2 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
+                        </div>
+                        <div class="flex gap-4 items-center group">
+                          <p class="w-16 flex-none">Instagram</p>
+                          <div class="w-10/12 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
+                        </div>
+                        <div class="flex gap-4 items-center group">
+                          <p class="w-16 flex-none">Pinterest</p>
+                          <div class="w-2/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
+                        </div>
+                        <div class="flex gap-4 items-center group">
+                          <p class="w-16 flex-none">Facebook</p>
+                          <div class="w-3/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
+                        </div>
+                        <div class="flex gap-4 items-center group">
+                          <p class="w-16 flex-none">Twitter</p>
+                          <div class="w-2/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
+                        </div>
+                        <div class="flex gap-4 items-center group">
+                          <p class="w-16 flex-none">Tumblr</p>
+                          <div class="w-3/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+                      <div class="bg-lightwhite rounded-2xl p-6">
+                          <h2 class="text-sm font-semibold text-black mb-4">Traffic by Device</h2>
+                          <div id="distributcolchart"></div>
+                      </div>
+                      <div class="bg-lightwhite rounded-2xl p-6">
+                          <h2 class="text-sm font-semibold text-black mb-4">Traffic by Location</h2>
+                          <div id="donutchartbar"></div>
+                      </div>
                   </div>
                 </div>
               </div>
-              <div class="bg-lightpurple rounded-2xl p-6">
-                <p class="text-sm font-semibold text-black mb-2">Visits</p>
-                <div class="flex items-center justify-between">
-                  <h2 class="text-2xl leading-9 font-semibold text-black">367K</h2>
-                  <div class="flex items-center gap-1">
-                    <p class="text-xs leading-[18px] text-black">+9.15%</p>
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-lightblue rounded-2xl p-6">
-                <p class="text-sm font-semibold text-black mb-2">New Users</p>
-                <div class="flex items-center justify-between">
-                  <h2 class="text-2xl leading-9 font-semibold text-black">1,156</h2>
-                  <div class="flex items-center gap-1">
-                    <p class="text-xs leading-[18px] text-black">-0.56%</p>
-                    <svg width="16" height="16" class="rotate-180" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-lightpurple rounded-2xl p-6">
-                <p class="text-sm font-semibold text-black mb-2">Active Users</p>
-                <div class="flex items-center justify-between">
-                  <h2 class="text-2xl leading-9 font-semibold text-black">239K</h2>
-                  <div class="flex items-center gap-1">
-                    <p class="text-xs leading-[18px] text-black">-1.48%</p>
-                    <svg width="16" height="16" class="rotate-180" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.45488 5.60777L14 4L12.6198 9.6061L10.898 7.9532L8.12069 10.8463C8.02641 10.9445 7.89615 11 7.76 11C7.62385 11 7.49359 10.9445 7.39931 10.8463L5.36 8.72199L2.36069 11.8463C2.16946 12.0455 1.85294 12.0519 1.65373 11.8607C1.45453 11.6695 1.44807 11.3529 1.63931 11.1537L4.99931 7.65373C5.09359 7.55552 5.22385 7.5 5.36 7.5C5.49615 7.5 5.62641 7.55552 5.72069 7.65373L7.76 9.77801L10.1766 7.26067L8.45488 5.60777Z" fill="#1C1C1C" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid grid-cols-4 gap-7">
-              <div class="col-span-3 bg-lightwhite p-6 rounded-2xl">
-                <div class="flex justify-between gap-3 items-center">
-                  <div></div>
-                  <div x-data="dropdown" @click.outside="open = false" class="dropdown ml-auto">
-                    <a href="javascript:;" @click="toggle">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 12.75C9.69036 12.75 10.25 13.3096 10.25 14C10.25 14.6904 9.69036 15.25 9 15.25C8.30964 15.25 7.75 14.6904 7.75 14C7.75 13.3096 8.30964 12.75 9 12.75Z" fill="#1C1C1C"/>
-                            <path d="M14 12.75C14.6904 12.75 15.25 13.3096 15.25 14C15.25 14.6904 14.6904 15.25 14 15.25C13.3096 15.25 12.75 14.6904 12.75 14C12.75 13.3096 13.3096 12.75 14 12.75Z" fill="#1C1C1C"/>
-                            <path d="M20.25 14C20.25 13.3096 19.6904 12.75 19 12.75C18.3096 12.75 17.75 13.3096 17.75 14C17.75 14.6904 18.3096 15.25 19 15.25C19.6904 15.25 20.25 14.6904 20.25 14Z" fill="#1C1C1C"/>
-                        </svg>
-                    </a>
-                    <ul x-cloak x-show="open" x-transition x-transition.duration.300ms class="right-0 hidden">
-                        <li><a href="javascript:;" @click="toggle">Weekly</a></li>
-                        <li><a href="javascript:;" @click="toggle">Monthly</a></li>
-                        <li><a href="javascript:;" @click="toggle">Yearly</a></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="relative">
-                    <div id="chart"></div>
-                </div>
-                
-              </div>
-              <div class="bg-lightwhite p-6 rounded-2xl">
-                <h2 class="text-sm font-semibold text-black mb-4">Traffic by Website</h2>
-                <div class="flex flex-col gap-[18px]">
-                  <div class="flex gap-4 items-center group">
-                    <p class="w-16 flex-none">Google</p>
-                    <div class="w-full h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
-                  </div>
-                  <div class="flex gap-4 items-center group">
-                    <p class="w-16 flex-none">Yourtube</p>
-                    <div class="w-1/2 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
-                  </div>
-                  <div class="flex gap-4 items-center group">
-                    <p class="w-16 flex-none">Instagram</p>
-                    <div class="w-10/12 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
-                  </div>
-                  <div class="flex gap-4 items-center group">
-                    <p class="w-16 flex-none">Pinterest</p>
-                    <div class="w-2/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
-                  </div>
-                  <div class="flex gap-4 items-center group">
-                    <p class="w-16 flex-none">Facebook</p>
-                    <div class="w-3/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
-                  </div>
-                  <div class="flex gap-4 items-center group">
-                    <p class="w-16 flex-none">Twitter</p>
-                    <div class="w-2/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
-                  </div>
-                  <div class="flex gap-4 items-center group">
-                    <p class="w-16 flex-none">Tumblr</p>
-                    <div class="w-3/5 h-[6px] relative bg-black/10 group-hover:bg-black rounded-tr-[4px] rounded-br-[4px] after:h-3 after:w-[1px] after:bg-black/10 group-hover:after:bg-black after:absolute after:left-0 after:-top-[3px]"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              <footer class="p-7 bg-white flex items-center justify-between">
+                <p class="text-xs text-black/40">© 2023 Snow</p>
+                <ul class="flex items-center text-black/40 text-xs">
+                  <li><a href="javascirpt:;" class="px-2 py-1 hover:text-black transition-all duration-300">About</a></li>
+                  <li><a href="javascirpt:;" class="px-2 py-1 hover:text-black transition-all duration-300">Support</a></li>
+                  <li><a href="javascirpt:;" class="px-2 py-1 hover:text-black transition-all duration-300">Contact Us</a></li>
+                </ul>
+              </footer>
         </div>
-        <footer class="p-7 bg-white flex items-center justify-between">
-          <p class="text-xs text-black/40">© 2023 Snow</p>
-          <ul class="flex items-center text-black/40 text-xs">
-            <li><a href="javascirpt:;" class="px-2 py-1 hover:text-black transition-all duration-300">About</a></li>
-            <li><a href="javascirpt:;" class="px-2 py-1 hover:text-black transition-all duration-300">Support</a></li>
-            <li><a href="javascirpt:;" class="px-2 py-1 hover:text-black transition-all duration-300">Contact Us</a></li>
-          </ul>
-        </footer>
+        
       </div>
       <div class="w-[280px] border-l border-black/10 transition-all duration-300 hidden xl:block">
         <div class="flex flex-col gap-9 px-6 py-[22px] h-screen overflow-y-auto overflow-x-hidden">
@@ -672,163 +703,279 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <!-- <script defer src="assets/js/apexcharts.js"></script> -->
-    <!-- <script defer src="assets/js/alpine.min.js"></script>
-    <script defer src="assets/js/custom.js"></script> -->
 
     <script>
-     
-      var options = {
-                    chart: {
-                        height: 232,
-                        type: "area",
-                        fontFamily: 'Inter, sans-serif',
-                        zoom: {
-                            enabled: false
-                        },
-                        toolbar: {
-                            show: false
-                        },
-                    },
-                    series: [{
-                                name: 'Income',
-                                data: [16000, 17000, 16000, 17000, 15000, 17000, 19000]
-                            },
-                            {
-                                name: 'Expenses',
-                                data: [16000, 17000, 15000, 19000, 16000, 19000, 16000]
-                            }
-                        ],
-                        dataLabels: {
-                        enabled: false
-                    },
-                    stroke: {
-                        show: true,
-                        curve: 'smooth',
-                        width: 2,
-                        lineCap: 'square'
-                    },
-                    dropShadow: {
-                        enabled: true,
-                        opacity: 0.2,
-                        blur: 10,
-                        left: -7,
-                        top: 22
-                    },
-                    colors: ['#2196f3', '#e7515a'],
-                    markers: {
-                        discrete: [{
-                                seriesIndex: 0,
-                                dataPointIndex: 6,
-                                fillColor: '#1b55e2',
-                                strokeColor: 'transparent',
-                                size: 7
-                            },
-                            {
-                                seriesIndex: 1,
-                                dataPointIndex: 5,
-                                fillColor: '#e7515a',
-                                strokeColor: 'transparent',
-                                size: 7
-                            },
-                        ],
-                    },
-                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
-                    xaxis: {
-                        axisBorder: {
-                            show: false
-                        },
-                        axisTicks: {
-                            show: false
-                        },
-                        crosshairs: {
-                            show: true
-                        },
-                        labels: {
-                            offsetX: 0,
-                            //offsetX: isRtl ? 2 : 0,
-                            offsetY: 5,
-                            style: {
-                                fontSize: '12px',
-                                cssClass: 'apexcharts-xaxis-title'
-                            }
-                        },
-                    },
-                    yaxis: {
-                        tickAmount: 7,
-                        labels: {
-                            formatter: (value) => {
-                                return value / 1000 + 'K';
-                            },
-                            offsetX: -10,
-                            // offsetX: isRtl ? -30 : -10,
-                            offsetY: 0,
-                            style: {
-                                fontSize: '12px',
-                                cssClass: 'apexcharts-yaxis-title'
-                            },
-                        },
-                        opposite: false,
-                        //opposite: isRtl ? true : false,
-                    },
-                    grid: {
-                        borderColor: '#e0e6ed',
-                        //borderColor: isDark ? '#191e3a' : '#e0e6ed',
-                        strokeDashArray: 5,
-                        xaxis: {
-                            lines: {
-                                show: true
-                            }
-                        },
-                        yaxis: {
-                            lines: {
-                                show: false
-                            }
-                        },
-                        padding: {
-                            top: 0,
-                            right: 0,
-                            bottom: 0,
-                            left: 0
-                        }
-                    },
-                    legend: {
-                        position: 'top',
-                        horizontalAlign: 'right',
-                        fontSize: '16px',
-                        markers: {
-                            width: 10,
-                            height: 10,
-                            offsetX: -2,
-                        },
-                        itemMargin: {
-                            horizontal: 10,
-                            vertical: 5
-                        },
-                    },
-                    tooltip: {
-                        marker: {
-                            show: true
-                        },
-                        x: {
-                            show: false
-                        }
-                    },
-                    fill: {
-                        type: 'gradient',
-                        gradient: {
-                            shadeIntensity: 1,
-                            inverseColors: !1,
-                            opacityFrom: 0.28,
-                            opacityTo: 0.05,
-                            stops: [100, 100],
-                        },
-                    },
+      //Line chart bar  
+      var linechart = {
+        chart: {
+          height: 232,
+          type: "area",
+          fontFamily: "Inter, sans-serif",
+          zoom: {
+            enabled: false,
+          },
+          toolbar: {
+            show: false,
+          },
+        },
+        series: [
+          {
+            name: "Current Week",
+            data: [0, 1000, 5000, 10000, 8000, 11000, 15000],
+          },
+          {
+            name: "Previous Week",
+            data: [2000, 3000, 6000, 12000, 9000, 13000, 14000],
+          },
+        ],
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          show: true,
+          curve: "smooth",
+          width: 3,
+          lineCap: "square",
+        },
+        dropShadow: {
+          enabled: true,
+          opacity: 0.2,
+          blur: 10,
+          left: -7,
+          top: 22,
+        },
+        colors: ["#1C1C1C", "#A8C5DA"],
+        markers: {
+          discrete: [
+            {
+              seriesIndex: 0,
+              dataPointIndex: 4,
+              fillColor: "#1C1C1C",
+              strokeColor: "#fff",
+              size: 6,
+            },
+            {
+              seriesIndex: 1,
+              dataPointIndex: 5,
+              fillColor: "#A8C5DA",
+              strokeColor: "#fff",
+              size: 6,
+            },
+          ],
+        },
+        labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        xaxis: {
+          axisBorder: {
+            show: false,
+          },
+          axisTicks: {
+            show: false,
+          },
+          crosshairs: {
+            show: true,
+          },
+          labels: {
+            offsetX: 0,
+            //offsetX: isRtl ? 2 : 0,
+            offsetY: 5,
+            style: {
+              fontSize: "12px",
+              cssClass: "apexcharts-xaxis-title",
+            },
+          },
+        },
+        yaxis: {
+          tickAmount: 7,
+          labels: {
+            formatter: (value) => {
+              return value / 1000 + "M";
+            },
+            offsetX: -10,
+            // offsetX: isRtl ? -30 : -10,
+            offsetY: 0,
+            style: {
+              fontSize: "12px",
+              cssClass: "apexcharts-yaxis-title",
+            },
+          },
+          opposite: false,
+          //opposite: isRtl ? true : false,
+        },
+        grid: {
+          borderColor: "#e0e6ed",
+          //borderColor: isDark ? '#191e3a' : '#e0e6ed',
+          strokeDashArray: 7,
+          xaxis: {
+            lines: {
+              show: false,
+            },
+          },
+          yaxis: {
+            lines: {
+              show: true,
+            },
+          },
+          padding: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0,
+          },
+        },
+        legend: {
+          show: false,
+          // position: 'top',
+          // horizontalAlign: 'right',
+          // fontSize: '12px',
+          // markers: {
+          //     width: 10,
+          //     height: 10,
+          //     offsetX: -2,
+          // },
+          // itemMargin: {
+          //     horizontal: 10,
+          //     vertical: 5
+          // },
+        },
+        tooltip: {
+          marker: {
+            show: true,
+          },
+          x: {
+            show: false,
+          },
+        },
+        fill: {
+          type: "gradient",
+          gradient: {
+            shadeIntensity: 1,
+            inverseColors: !1,
+            opacityFrom: 0,
+            opacityTo: 0,
+            stops: [100, 100],
+          },
+        },
+      };
+      var chart1 = new ApexCharts(document.querySelector("#linechart"), linechart);
+      chart1.render();
+
+      //Distributed Columns
+      var distributcolchart = {
+          series: [{
+          name: "Device", 
+          data: [10000, 70000, 40000, 50000, 60000, 80000,],
+        }],
+          chart: {
+          height: 189,
+          type: 'bar',
+          events: {
+            click: function(chart, w, e) {
+              // console.log(chart, w, e)
             }
+          },
+          toolbar: {
+            show: false,
+          },
+        },
+        colors: ["#BAEDBD", "#C6C7F8", "#1C1C1C", "#B1E3FF", "#95A4FC", "#A1E3CB"],
+        plotOptions: {
+          bar: {
+            columnWidth: '30%',
+            distributed: true,
+            
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        legend: {
+          show: false
+        },
+        yaxis: {
+          tickAmount: 6,
+          labels: {
+            formatter: (value) => {
+              return value / 100 + "K";
+            },
+            offsetX: -10,
+            
+            offsetY: 0,
+            style: {
+              fontSize: "12px",
+            },
+          },
+          opposite: false,
+        },
+        xaxis: {
+          categories: ['Linux', 'Mac', 'iOS', 'Windows', 'Android', 'Other'],
+          labels: {
+            style: {
+              fontSize: '12px'
+            }
+          }
+        }
+        };
+      var chart2 = new ApexCharts(document.querySelector("#distributcolchart"), distributcolchart);
+      chart2.render();
 
-            var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-            chart.render();
+      //Donut chart bar
+      var donutchartbar = {
+        series: [38.5, 22.5, 30.8, 8.1 ],
+        chart: {
+            type: 'donut',
+            height: 200,
+            fontFamily: 'Nunito, sans-serif',
+            
+        },
+        dataLabels: {
+            enabled: false
+        },
+        legend: {
+            position: 'right',
+            horizontalAlign: 'left',
+            fontSize: '12px',
+            formatter: function(val, opts) {
+             return val + " - " + opts.w.globals.series[opts.seriesIndex] + "%"
+            },
+            markers: {
+                width: 6,
+                height: 6,
+                offsetX: -5,
+            },
+            height: 140,
+            offsetY: 0,
+        },
+        
+        colors: ['#BAEDBD', '#C6C7F8', '#1C1C1C', '#95A4FC'],
+        labels: ['United States', 'Canada', 'Mexico', 'Other'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+           
+            legend: {
+              position: 'bottom',
+              height: 50,
+            }
+          }
+        }],
+        states: {
+            hover: {
+                filter: {
+                    type: 'none',
+                    value: 0.15,
+                }
+            },
+            active: {
+                filter: {
+                    type: 'none',
+                    value: 0.15,
+                }
+            },
+        },
+        };
+        var chart3 = new ApexCharts(document.querySelector("#donutchartbar"), donutchartbar);
+        chart3.render();
+        
     </script>
   </body>
 </html>

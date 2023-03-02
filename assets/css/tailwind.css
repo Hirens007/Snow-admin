@@ -35,4 +35,8 @@
   .sidebar ul.sub-menu li a.active {
     @apply text-black;
   }
+ 
+}
+.apexcharts-legend{
+  @apply gap-1 sm:gap-4;
 }
