@@ -35,6 +35,36 @@
   .sidebar ul.sub-menu li a.active {
     @apply text-black;
   }
+
+  /* tables */
+  .table-responsive {
+    @apply overflow-auto;
+  }
+  table {
+    @apply w-full !border-collapse;
+  }
+  table thead tr,
+  table tfoot tr {
+    @apply border-b border-black/20 whitespace-nowrap;
+  }
+  table thead tr th,
+  table tfoot tr th,
+  table tbody tr td {
+    @apply py-2 px-4 text-left;
+  }
+  table thead tr th,
+  table tfoot tr th {
+    @apply font-normal text-black/40 text-xs ;
+  }
+  table tbody tr {
+    @apply border-b-0;
+  }
+  table.table-hover tbody tr {
+    @apply hover:bg-black/5;
+  }
+  table.table-striped tbody tr:nth-child(odd) {
+    @apply bg-black/10;
+  }
  
 }
 .apexcharts-legend{
