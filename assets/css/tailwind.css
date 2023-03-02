@@ -70,3 +70,6 @@
 .apexcharts-legend{
   @apply gap-1 sm:gap-4;
 }
+#totalsales .apexcharts-legend{
+  @apply gap-0 mx-auto;
+}

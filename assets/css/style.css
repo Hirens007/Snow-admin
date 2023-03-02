@@ -957,6 +957,10 @@ table.table-hover tbody tr:hover {
   height: 1.75rem;
 }
 
+.h-\[2px\] {
+  height: 2px;
+}
+
 .h-\[6px\] {
   height: 6px;
 }
@@ -1250,6 +1254,15 @@ table.table-hover tbody tr:hover {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.bg-\[\#A8C5DA\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(168 197 218 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#A8C5DA\]\/20 {
+  background-color: rgb(168 197 218 / 0.2);
 }
 
 .bg-black\/10 {
@@ -1573,6 +1586,12 @@ table.table-hover tbody tr:hover {
   .apexcharts-legend {
     gap: 1rem;
   }
+}
+
+#totalsales .apexcharts-legend {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 0px;
 }
 
 .after\:absolute::after {
