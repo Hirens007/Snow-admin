@@ -29,5 +29,6 @@ module.exports = {
       strategy: "base", // only generate global styles
     }),
     require('tailwind-scrollbar'),
+    require('@tailwindcss/line-clamp'),
   ],
 };
