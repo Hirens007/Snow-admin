@@ -12,7 +12,7 @@
 
   /* scrollbar */
   ::-webkit-scrollbar {
-    @apply bg-transparent w-1.5;
+    @apply bg-transparent w-1.5 h-1.5;
   }
 
   ::-webkit-scrollbar-thumb {
