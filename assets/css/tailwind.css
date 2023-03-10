@@ -6,6 +6,9 @@
   html {
     @apply scroll-smooth;
   }
+  [x-cloak] {
+    display: none !important;
+  }
   body {
     @apply bg-white;
   }
@@ -22,13 +25,26 @@
   ::-webkit-scrollbar-thumb {
     @apply bg-black/10;
   }
+  .main-container .main-content {
+    @apply transition-all duration-300 lg:ml-[212px];
+  }
+  /* Vertical layouts */
+  .vertical.toggle-sidebar .main-container .main-content {
+    @apply ml-0;
+  }
+  .vertical .sidebar {
+    @apply -left-[212px] lg:left-0;
+  }
+  .vertical.toggle-sidebar .sidebar {
+    @apply left-0 lg:-left-[212px];
+  }
 
   /* Sidebar */
   .sidebar:hover .nav-item > a {
     @apply w-auto;
   }
   .sidebar .nav-item > a {
-    @apply  mb-1 px-2 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-[#506690] hover:bg-black/10  hover:text-black;
+    @apply  mb-1 px-2 py-1 flex items-center overflow-hidden whitespace-nowrap rounded-md gap-1 text-black hover:bg-black/10  hover:text-black;
   }
   .sidebar .nav-item > a.active {
     @apply bg-black/10 text-black;
