@@ -96,7 +96,9 @@
     background-color: white;
   }
 
-  .loginform .form-input{
+  .loginform .form-input,
+  .loginform .form-select,
+  .loginform .form-textarea{
     @apply py-2.5 px-4 w-full text-black border border-black/10 rounded-lg placeholder:text-black/20 focus:border-black focus:ring-0 focus:shadow-none;
   }
 
