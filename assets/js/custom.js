@@ -40,6 +40,12 @@
       toggleSidebar() {
         this.sidebar = !this.sidebar;
       },
+
+      //right sidebar
+      rightsidebar: false,
+      rightSidebar() {
+        this.rightsidebar = !this.rightsidebar;
+      }
     });
   });
 })();
