@@ -10,7 +10,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 	</head>
-	<body x-data="main" class="antialiased relative font-inter bg-white text-black text-sm font-normal overflow-x-hidden" :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.rightsidebar ? 'right-sidebar' : '', $store.app.menu, $store.app.layout]">
+	<body x-data="main" class="antialiased relative font-inter bg-white text-black text-sm font-normal overflow-x-hidden vertical" :class="[ $store.app.sidebar ? 'toggle-sidebar' : '', $store.app.rightsidebar ? 'right-sidebar' : '', $store.app.menu, $store.app.layout]">
 		<div x-cloak class="fixed inset-0 bg-[black]/60 z-40 lg:hidden" :class="{'hidden' : !$store.app.sidebar}" @click="$store.app.toggleSidebar()"></div>
 		<div x-cloak class="fixed inset-0 bg-[black]/60 z-50 xl:hidden" :class="{'hidden' : !$store.app.rightsidebar}" @click="$store.app.rightSidebar()"></div>
 		<div class="main-container navbar-sticky flex" :class="[$store.app.navbar]">
@@ -30,7 +30,7 @@
 						<ul class="relative h-[calc(100vh-58px)] flex flex-col gap-1 overflow-y-auto overflow-x-hidden p-4 py-0" x-data="{ activeMenu: 'dashboards' }">
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group active text-black" :class="{'active' : activeMenu === 'dashboards'}" @click="activeMenu === 'dashboards' ? activeMenu = null : activeMenu = 'dashboards'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'dashboards'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'dashboards'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -48,19 +48,19 @@
 							</a>
 							<ul x-cloak x-show="activeMenu === 'dashboards'" x-collapse class="sub-menu flex flex-col gap-1 text-black">
 								<li>
-									<a href="javascript:;">Default</a>
+									<a href="index.html">Default</a>
 								</li>
 								<li>
-									<a href="javascript:;">Projects</a>
+									<a href="projects.html">Projects</a>
 								</li>
 								<li>
-									<a href="javascript:;">eCommerce</a>
+									<a href="ecommerce.html">eCommerce</a>
 								</li>
 							</ul>
 						</li>
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group active text-black" :class="{'active' : activeMenu === 'apps'}" @click="activeMenu === 'apps' ? activeMenu = null : activeMenu = 'apps'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'apps'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'apps'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -88,7 +88,7 @@
 						</h2>
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group active text-black" :class="{'active' : activeMenu === 'components'}" @click="activeMenu === 'components' ? activeMenu = null : activeMenu = 'components'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'components'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'components'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -147,7 +147,7 @@
 						</li>
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group text-black" :class="{'active' : activeMenu === 'elements'}" @click="activeMenu === 'elements' ? activeMenu = null : activeMenu = 'elements'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'elements'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'elements'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -290,7 +290,7 @@
 						</li>
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group" :class="{'active' : activeMenu === 'forms'}" @click="activeMenu === 'forms' ? activeMenu = null : activeMenu = 'forms'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'forms'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'forms'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -356,7 +356,7 @@
 						</h2>
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group" :class="{'active' : activeMenu === 'users'}" @click="activeMenu === 'users' ? activeMenu = null : activeMenu = 'users'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'users'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'users'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -374,12 +374,15 @@
 								</div>
 							</a>
 							<ul x-cloak x-show="activeMenu === 'users'" x-collapse class="sub-menu flex flex-col gap-1 text-black">
-								<li><a href="javascript:;">Account</a></li>
+								<li><a href="account.html">Account</a></li>
+								<li><a href="user-projects.html">User Projects</a></li>
+								<li><a href="projects-details.html">Project Details</a></li>
+								<li><a href="order-list.html">Order List</a></li>
 							</ul>
 						</li>
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group" :class="{'active' : activeMenu === 'pages'}" @click="activeMenu === 'pages' ? activeMenu = null : activeMenu = 'pages'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'pages'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'pages'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -395,7 +398,7 @@
 							</a>
 							<ul x-cloak x-show="activeMenu === 'pages'" x-collapse class="sub-menu flex flex-col gap-1 text-black">
 								<li><a href="javascript:;">Coming Soon</a></li>
-								<li><a href="javascript:;">404 Error</a></li>
+								<li><a href="404.html">404 Error</a></li>
 								<li><a href="javascript:;">500 Error</a></li>
 								<li><a href="javascript:;">503 Error</a></li>
 								<li><a href="javascript:;">Maintanence</a></li>
@@ -403,7 +406,7 @@
 						</li>
 						<li class="menu nav-item">
 							<a href="javascript:;" class="nav-link group" :class="{'active' : activeMenu === 'authentication'}" @click="activeMenu === 'authentication' ? activeMenu = null : activeMenu = 'authentication'">
-								<div class="text-black/20 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'authentication'}">
+								<div class="text-black/50 w-4 h-4 flex items-center justify-center" :class="{'!rotate-90' : activeMenu === 'authentication'}">
 									<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.659675 9.35355C0.446775 9.15829 0.446775 8.84171 0.659675 8.64645L4.25 5.35355C4.4629 5.15829 4.4629 4.84171 4.25 4.64645L0.659675 1.35355C0.446776 1.15829 0.446776 0.841709 0.659675 0.646446C0.872575 0.451184 1.21775 0.451185 1.43065 0.646446L5.02098 3.93934C5.65967 4.52513 5.65968 5.47487 5.02098 6.06066L1.43065 9.35355C1.21775 9.54882 0.872574 9.54882 0.659675 9.35355Z" fill="currentcolor" />
 									</svg>
@@ -419,16 +422,16 @@
 								</div>
 							</a>
 							<ul x-cloak x-show="activeMenu === 'authentication'" x-collapse class="sub-menu flex flex-col gap-1 text-black">
-								<li><a href="javascript:;">Login</a></li>
-								<li><a href="javascript:;">Login Cover</a></li>
-								<li><a href="javascript:;">Register</a></li>
-								<li><a href="javascript:;">Password</a></li>
-								<li><a href="javascript:;">Verification</a></li>
-								<li><a href="javascript:;">Forgot PW</a></li>
-								<li><a href="javascript:;">Account Info</a></li>
-								<li><a href="javascript:;">Account Type</a></li>
-								<li><a href="javascript:;">Billing Details</a></li>
-								<li><a href="javascript:;">Billing Detail 2</a></li>
+								<li><a href="login.html">Login</a></li>
+								<li><a href="login-cover.html">Login Cover</a></li>
+								<li><a href="signup.html">Register</a></li>
+								<li><a href="reset-password.html">Reset PW</a></li>
+								<li><a href="login-verification.html">Verification</a></li>
+								<li><a href="forgot-password.html">Forgot PW</a></li>
+								<li><a href="account-info.html">Account Info</a></li>
+								<li><a href="account-type.html">Account Type</a></li>
+								<li><a href="billing-details.html">Billing Details</a></li>
+								<li><a href="billing-details2.html">Billing Detail 2</a></li>
 							</ul>
 						</li>
 						<h2 class="pl-3 mb-2 mt-2 text-black/40 text-sm">
@@ -640,7 +643,7 @@
 											</ul>
 										</div>
 									</div>
-									<div id="linechart"></div>
+									<div id="userchart"></div>
 								</div>
 								<div class="bg-lightwhite p-6 rounded-2xl">
 									<h2 class="text-sm font-semibold text-black mb-4">Traffic by Website</h2>
@@ -679,11 +682,11 @@
 							<div class="grid grid-cols-1 md:grid-cols-2 gap-7">
 								<div class="bg-lightwhite rounded-2xl p-6">
 									<h2 class="text-sm font-semibold text-black mb-4">Traffic by Device</h2>
-									<div id="distributcolchart"></div>
+									<div id="trafficdevice"></div>
 								</div>
 								<div class="bg-lightwhite rounded-2xl p-6">
 									<h2 class="text-sm font-semibold text-black mb-4">Traffic by Location</h2>
-									<div id="donutchartbar"></div>
+									<div id="trafficlocation"></div>
 								</div>
 							</div>
 						</div>
@@ -856,284 +859,7 @@
 		<script src="assets/js/alpine-persist.min.js"></script>
 		<script src="assets/js/alpine.min.js" defer></script>
 		<script src="assets/js/apexcharts.js"></script>
+		<script src="assets/js/charts.js"></script>
 		<script src="assets/js/custom.js"></script>
-		<script>
-			document.addEventListener("alpine:init", () => {
-				Alpine.data("customizer", () => ({
-					showCustomizer: false,
-				}));
-			});
-			//Line chart bar
-			var linechart = {
-				chart: {
-					height: 232,
-					type: "area",
-					fontFamily: "Inter, sans-serif",
-					zoom: {
-						enabled: false,
-					},
-					toolbar: {
-						show: false,
-					},
-				},
-				series: [
-					{
-						name: "Current Week",
-						data: [0, 1000, 5000, 10000, 8000, 11000, 15000],
-					},
-					{
-						name: "Previous Week",
-						data: [2000, 3000, 6000, 12000, 9000, 13000, 14000],
-					},
-				],
-				dataLabels: {
-					enabled: false,
-				},
-				stroke: {
-					show: true,
-					curve: "smooth",
-					width: 3,
-					lineCap: "square",
-				},
-				dropShadow: {
-					enabled: true,
-					opacity: 0.2,
-					blur: 10,
-					left: -7,
-					top: 22,
-				},
-				colors: ["#1C1C1C", "#A8C5DA"],
-				markers: {
-					discrete: [
-						{
-							seriesIndex: 0,
-							dataPointIndex: 4,
-							fillColor: "#1C1C1C",
-							strokeColor: "#fff",
-							size: 6,
-						},
-						{
-							seriesIndex: 1,
-							dataPointIndex: 5,
-							fillColor: "#A8C5DA",
-							strokeColor: "#fff",
-							size: 6,
-						},
-					],
-				},
-				labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-				xaxis: {
-					axisBorder: {
-						show: false,
-					},
-					axisTicks: {
-						show: false,
-					},
-					crosshairs: {
-						show: true,
-					},
-					labels: {
-						offsetX: 0,
-						//offsetX: isRtl ? 2 : 0,
-						offsetY: 5,
-						style: {
-							fontSize: "12px",
-							cssClass: "apexcharts-xaxis-title",
-						},
-					},
-				},
-				yaxis: {
-					tickAmount: 7,
-					labels: {
-						formatter: (value) => {
-							return value / 1000 + "M";
-						},
-						offsetX: -10,
-						// offsetX: isRtl ? -30 : -10,
-						offsetY: 0,
-						style: {
-							fontSize: "12px",
-							cssClass: "apexcharts-yaxis-title",
-						},
-					},
-					opposite: false,
-					//opposite: isRtl ? true : false,
-				},
-				grid: {
-					borderColor: "#e0e6ed",
-					//borderColor: isDark ? '#191e3a' : '#e0e6ed',
-					strokeDashArray: 7,
-					xaxis: {
-						lines: {
-							show: false,
-						},
-					},
-					yaxis: {
-						lines: {
-							show: true,
-						},
-					},
-					padding: {
-						top: 0,
-						right: 0,
-						bottom: 0,
-						left: 0,
-					},
-				},
-				legend: {
-					show: false,
-					// position: 'top',
-					// horizontalAlign: 'right',
-					// fontSize: '12px',
-					// markers: {
-					//     width: 10,
-					//     height: 10,
-					//     offsetX: -2,
-					// },
-					// itemMargin: {
-					//     horizontal: 10,
-					//     vertical: 5
-					// },
-				},
-				tooltip: {
-					marker: {
-						show: true,
-					},
-					x: {
-						show: false,
-					},
-				},
-				fill: {
-					type: "gradient",
-					gradient: {
-						shadeIntensity: 1,
-						inverseColors: !1,
-						opacityFrom: 0,
-						opacityTo: 0,
-						stops: [100, 100],
-					},
-				},
-			};
-			var chart1 = new ApexCharts(document.querySelector("#linechart"), linechart);
-			chart1.render();
-
-			//Distributed Columns
-			var distributcolchart = {
-				series: [
-					{
-						name: "Device",
-						data: [10000, 70000, 40000, 50000, 60000, 80000],
-					},
-				],
-				chart: {
-					height: 189,
-					type: "bar",
-					events: {
-						click: function (chart, w, e) {
-							// console.log(chart, w, e)
-						},
-					},
-					toolbar: {
-						show: false,
-					},
-				},
-				colors: ["#BAEDBD", "#C6C7F8", "#1C1C1C", "#B1E3FF", "#95A4FC", "#A1E3CB"],
-				plotOptions: {
-					bar: {
-						columnWidth: "30%",
-						distributed: true,
-					},
-				},
-				dataLabels: {
-					enabled: false,
-				},
-				legend: {
-					show: false,
-				},
-				yaxis: {
-					tickAmount: 6,
-					labels: {
-						formatter: (value) => {
-							return value / 100 + "K";
-						},
-						offsetX: -10,
-
-						offsetY: 0,
-						style: {
-							fontSize: "12px",
-						},
-					},
-					opposite: false,
-				},
-				xaxis: {
-					categories: ["Linux", "Mac", "iOS", "Windows", "Android", "Other"],
-					labels: {
-						style: {
-							fontSize: "12px",
-						},
-					},
-				},
-			};
-			var chart2 = new ApexCharts(document.querySelector("#distributcolchart"), distributcolchart);
-			chart2.render();
-
-			//Donut chart bar
-			var donutchartbar = {
-				series: [38.5, 22.5, 30.8, 8.1],
-				chart: {
-					type: "donut",
-					height: 200,
-					fontFamily: "Nunito, sans-serif",
-				},
-				dataLabels: {
-					enabled: false,
-				},
-				legend: {
-					position: "right",
-					horizontalAlign: "left",
-					fontSize: "12px",
-					formatter: function (val, opts) {
-						return val + " - " + opts.w.globals.series[opts.seriesIndex] + "%";
-					},
-					markers: {
-						width: 6,
-						height: 6,
-						offsetX: -5,
-					},
-					height: 140,
-					offsetY: 0,
-				},
-
-				colors: ["#BAEDBD", "#C6C7F8", "#1C1C1C", "#95A4FC"],
-				labels: ["United States", "Canada", "Mexico", "Other"],
-				responsive: [
-					{
-						breakpoint: 480,
-						options: {
-							legend: {
-								position: "bottom",
-								height: 50,
-							},
-						},
-					},
-				],
-				states: {
-					hover: {
-						filter: {
-							type: "none",
-							value: 0.15,
-						},
-					},
-					active: {
-						filter: {
-							type: "none",
-							value: 0.15,
-						},
-					},
-				},
-			};
-			var chart3 = new ApexCharts(document.querySelector("#donutchartbar"), donutchartbar);
-			chart3.render();
-		</script>
 	</body>
 </html>

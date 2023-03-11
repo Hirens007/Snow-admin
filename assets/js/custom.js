@@ -16,15 +16,6 @@
 
     Alpine.store('app', {
        
-      // navigation menu
-      menu: Alpine.$persist('vertical'),
-      toggleMenu(val) {
-        if (!val) {
-          val = this.menu || 'vertical'; // vertical, collapsible-vertical, horizontal
-        }
-        this.sidebar = false; // reset sidebar state
-        this.menu = val;
-      },
       // animation
       animation: Alpine.$persist(''),
       toggleAnimation(val) {
