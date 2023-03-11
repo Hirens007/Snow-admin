@@ -38,7 +38,6 @@
   .vertical.toggle-sidebar .sidebar {
     @apply left-0 lg:-left-[212px];
   }
-
   .vertical.right-sidebar .main-container .main-content {
     @apply mr-0;
   }
@@ -48,6 +47,7 @@
   .vertical.right-sidebar .right-sidebar {
     @apply right-0 xl:-right-[280px];
   }
+  
   /* Sidebar */
   .sidebar:hover .nav-item > a {
     @apply w-auto;
