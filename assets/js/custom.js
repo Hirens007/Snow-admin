@@ -9,7 +9,13 @@
         this.collapse = !this.collapse;
       },
     }));
+    Alpine.data('dropdown', (initialOpenState = false) => ({
+      open: initialOpenState,
 
+      toggle() {
+        this.open = !this.open;
+      },
+    }));
 
     // main - custom functions
     Alpine.data('main', (value) => ({}));

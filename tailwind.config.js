@@ -22,6 +22,9 @@ module.exports = {
           DEFAULT: "#E5ECF6",
         },
       },
+      boxShadow: {
+        "3xl": "0 0 16px rgb(0 0 0 / 10%)",
+      },
     },
   },
   plugins: [

@@ -65,6 +65,19 @@
     @apply text-black bg-black/5 before:h-4 before:w-1 before:bg-black before:absolute before:top-[6px] before:left-0 before:rounded-[3px];
   }
 
+  /* profile-dropdown */
+  .profile {
+    @apply relative;
+  }
+  .profile ul {
+    @apply absolute z-10 mt-2 min-w-[120px] rounded bg-white right-0 text-black/60 top-11 !py-0 w-40 shadow-3xl;
+  }
+  .profile ul li > a,
+  .profile ul li > button,
+  .profile ul li > div {
+    @apply flex items-center px-4 py-2 hover:bg-black/5 hover:text-black;
+  }
+
   /* tables */
   .table-responsive {
     @apply overflow-auto;
